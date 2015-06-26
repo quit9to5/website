@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>ourdhobi</title>
+	<meta charset="utf-8" />
+
+	<link  rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css"/>
+</head>
+
+
+<body class="body">
+	<h1>ourdhobi.com beta {{Title}}</h1>
+</div>
+
+<hr>
+<form method='POST' action=''>{% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='submit'>
+</form>
+<hr>
+<footer>
+  <p>Posted by: Vivacity</p>
+  <p>Contact information: <a href="mailto:vivacity.legend@gmail.com">contact</a>.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "our_form/base.html" %}
+{% load crispy_forms_tags %}
+	{% block jumbotron %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <h1>Welcome to ourdhobi.com</h1>
+    <p>Don't waste your weekends. Give us a try</p>
+    <p>Timing 9:00 A.M till 9:00 P.M.</p>
+    <p>Call us at +919618893436</p>
+    <p>This service available only in Hyderabad</p>
+</div>
+
+
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-3 pull-right">
+      <h3> Make a request </h3>
+      <form method='POST' action=''>{% csrf_token %}
+        {{ form|crispy }}
+<br>
+<br>
+        <input class="btn btn-primary" type='submit' value='submit' />
+
+        </input>
+      </form>
+    </div>
+
+
+</div>
+<hr>
+<footer>
+<hr>
+  <p>Posted by: Vivacity, &copy; ourdhobi 2015</p>
+  <p>Contact information: <a href="mailto:vivacity.legend@gmail.com">contact</a>.</p>
+</footer>
+{% endblock %}

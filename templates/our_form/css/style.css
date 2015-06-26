@@ -1,0 +1,21 @@
+body {
+	color: #000305;
+	font-size: 80%;
+	font-family: 'Lucida Sans Unicode';
+	line-hieght: 1.5;
+	text-align: left;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+a {
+    text-decoloration: none;
+}

@@ -17,9 +17,12 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^$', include('our_form.urls')),
     url('', include('social.apps.django_app.urls', namespace='social')),
     url('', include('django.contrib.auth.urls', namespace='auth')),
     url(r'^thirdauth/', include('thirdauth.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^polls/', include('polls.urls')),
+    url(r'^our_form/', include('our_form.urls')),
+    url(r'^contact/', 'our_form.views.contact',name='contact'),
 ]

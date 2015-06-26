@@ -37,7 +37,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'our_form',
     'polls',
+    # third party apps
+     'crispy_forms',
     'thirdauth',
     'social.apps.django_app.default',
 )
@@ -65,6 +68,10 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
+		"django.core.context_processors.debug",
+		"django.core.context_processors.i18n",
+		"django.core.context_processors.media",
+		"django.core.context_processors.static",
                 'django.contrib.messages.context_processors.messages',
 		'social.apps.django_app.context_processors.backends',
 		'social.apps.django_app.context_processors.login_redirect',
@@ -111,3 +118,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
+
+# Add your google app key and secret key below
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
