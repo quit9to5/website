@@ -1,4 +1,5 @@
-or 
+1. We need to install pip installer. Do like this 
+
 root@kripanand-VirtualBox:~$ apt-get install python-pip 
 
 2. Now install django using pip
