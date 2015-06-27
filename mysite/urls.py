@@ -23,6 +23,6 @@ urlpatterns = [
     url(r'^thirdauth/', include('thirdauth.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^polls/', include('polls.urls')),
-    url(r'^our_form/', include('our_form.urls')),
+    url(r'^about-us/', 'our_form.views.aboutus',name='aboutus'),
     url(r'^contact/', 'our_form.views.contact',name='contact'),
 ]
